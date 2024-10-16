@@ -1,0 +1,307 @@
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    position: relative;
+}
+img {
+    width: 100%;
+}
+/* ヘッダー */
+#header {
+    font-size: 14px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#header .header-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#header .header-navi-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#header .header-navi-list li {
+    margin-right: 44px;
+}
+#header ul li:last-child {
+    margin-right: 0;
+}
+#header img {
+    width: 100px;
+}
+/* メインビジュアル */
+.main-visual {
+    margin-top: 76px;
+    height: 100vh;
+    background: url('/img/FV.jpeg') no-repeat center bottom/ cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 58px;
+}
+.main-visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+.main-visual-comtainer {
+    position: relative;
+    width: 34%;
+    z-index: 2;
+}
+.main-visual img {
+    max-width: 100%;
+    margin-bottom: 120px;
+}
+.main-visual .company-name {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+.main-visual .company-description {
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 2px;
+}
+/* セクション */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 200px;
+}
+.section-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 38px;
+    color: #fff;
+    margin-bottom: 46px;
+}
+.center {
+    width: 70%;
+}
+/* サービス */
+.services {
+    background-color: #F15929;
+    position: relative;
+}
+.services::after{
+    content: "";
+    display: block;
+    background-image: url(/img/wave-orange.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.service-item {
+    background-color: #fff;
+    padding: 48px;
+    max-width: 400px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 27px;
+}
+.service-description {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: auto;
+}
+.more-button {
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    margin-top: 40px;
+    padding: 16px 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    border: #000 2px solid;
+    position: relative;
+    z-index: 2;
+}
+.more-button:hover {
+    background-color: #0056b3;
+}
+.plus {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+/* パートナー募集 */
+.partner-recruitment {
+    background-color: #fff;
+    position: relative;
+}
+.partner-recruitment::after{
+    content: "";
+    display: block;
+    background-image: url(/img/wave-white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1;
+}
+.partner-recruitment-title {
+    color: #1F3F99;
+}
+.boxes {
+    display: grid;
+    grid-template: 
+    "img1 text1" 1fr
+    "text2 img2" 1fr
+    /1fr 1fr;
+    margin-bottom: 70px;
+}
+.boxes img {
+    width: 100%;
+    height: 100%;
+}
+.box1 {
+    grid-area: img1;
+}
+.box2 {
+    grid-area: img2;
+}
+.box3 {
+    grid-area: text1;
+}
+.box4 {
+    grid-area: text2;
+}
+.box-description {
+    padding:  60px 40px 50px;
+    background-color: #0F75BC;
+    color: #fff;
+}
+.box-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.box-text {
+    font-size: 16px;
+    line-height: 30px;
+}
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 0 5px #0F75BC;
+    background-color: #0F75BC;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+/* 新着情報 */
+.news {
+    background-color: #FEBE0E;
+    position: relative;
+}
+.news::after{
+    content: "";
+    display: block;
+    background-image: url(/img/wave-yellow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1;
+}
+.news-list {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+.news-list li {
+    padding: 26px 40px;
+}
+.news-date {
+    margin-bottom: 10px;
+}
+#footer {
+    padding: 20px 0 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.footer-center {
+    width: 60%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container img {
+    width: 100px;
+    height: auto; 
+}
+
+.footer-container ul {
+    display: flex;
+}
+.footer-container ul li {
+    margin-right: 30px;
+}
+.footer-container ul li:last-child {
+    margin-right: 0;
+}
+.copyright {
+    text-align: center;
+    margin: 40px 0 20px;
+}
