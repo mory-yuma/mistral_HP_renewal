@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header-container">
+            <h1 class="logo"><img src="/img/header_logo.png" alt="ロゴ">
+            </h1>
+            <nav class="header-navi">
+                <ul class="header-navi-list">
+                    <li><a href="/HTML//mistral_home.html">ホーム</a></li>
+                    <li><a href="/HTML/service.html">サービス</a></li>
+                    <li><a href="/HTML/overview.html">会社概要</a></li>
+                    <li><a href="/HTML/partner.html">パートナー募集</a></li>
+                    <li><a href="/HTML/contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="title-container yellow">
+            <h2 class="page-title">お問い合わせ</h2>
+        </div>
+        <div class="wave-top">
+            <div class="subpage-center">
+                <p class="form-guidance">以下のフォームにご入力の上、「送信」ボタンを押してください</p>
+                <div class="contact-form">
+                    <p><span class="asterisk">*</span> は必須項目です。</p>
+                    <form action="#" method="post">
+                        <h2>基本情報</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="last-name">姓<span class="asterisk">*</span></label>
+                                <input type="text" id="last-name" name="last-name" required> 
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name">名<span class="asterisk">*</span></label>
+                                <input type="text" id="first-name" name="first-name" required> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">メールアドレス<span class="asterisk">*</span></label>
+                            <input type="text" id="mail" name="mail" required> 
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話番号<span class="asterisk">*</span></label>
+                            <input type="text" id="phone" name="phone" required> 
+                        </div>
+
+                        <h2>お問い合わせ内容</h2>
+                        <div class="form-group">
+                            <label for="inquiry-type">件名<span class="asterisk">*</span></label>
+                            <div class="radio-group">
+                                <div class="flex">                                
+                                    <input type="radio" id="freelance" name="inquiry-type" value="freelance" checked>
+                                    <label for="freelance">フリーランス案件希望</label>
+                                </div>
+                                <div class="flex">
+                                    <input type="radio" id="partner" name="inquiry-type" value="partner">
+                                    <label for="partner">SES事業パートナー希望</label>
+                                </div>
+                                <div class="flex">
+                                    <input type="radio" id="other" name="inquiry-type" value="other">
+                                    <label for="other">その他</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">本文<span class="asterisk">*</span></label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">送信</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-center">
+            <div class="footer-container">
+                <img src="/img/logo.png" alt="logo">
+                <ul>
+                    <li><a href="/HTML/service.html">サービス</a></li>
+                    <li><a href="/HTML/overview.html">会社概要</a></li>
+                    <li><a href="/HTML/partner.html">パートナー募集</a></li>
+                    <li><a href="/HTML/contact.html">お問い合わせ</a></li>
+                    <li><a href="/HTML/policy.html">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+            <p class="copyright">
+                Copyright &copy; 2020 mistral. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
