@@ -1,55 +1,6 @@
-* {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 400;
-}
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-body {
-    position: relative;
-}
-img {
-    width: 100%;
-}
-/* ヘッダー */
-#header {
-    font-size: 14px;
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-#header .header-container {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-#header .header-navi-list {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-#header .header-navi-list li {
-    margin-right: 44px;
-}
-#header ul li:last-child {
-    margin-right: 0;
-}
-#header img {
-    width: 100px;
-}
 /* メインビジュアル */
 .main-visual {
-    margin-top: 76px;
+ 
     height: 100vh;
     background: url('/img/FV.jpeg') no-repeat center bottom/ cover;
     display: flex;
@@ -79,12 +30,12 @@ img {
     margin-bottom: 120px;
 }
 .main-visual .company-name {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 18px;
 }
 .main-visual .company-description {
-    font-size: 16px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 32px;
     letter-spacing: 2px;
 }
 /* セクション */
@@ -96,12 +47,9 @@ img {
 .section-title {
     text-align: center;
     font-weight: 500;
-    font-size: 38px;
+    font-size: 40px;
     color: #fff;
     margin-bottom: 46px;
-}
-.center {
-    width: 70%;
 }
 /* サービス */
 .services {
@@ -126,6 +74,10 @@ img {
     justify-content: space-between;
     gap: 20px;
 }
+.servicee {
+    font-size: 40px;
+    font-weight: 700;
+}
 .service-item {
     background-color: #fff;
     padding: 48px;
@@ -146,6 +98,7 @@ img {
     margin-bottom: auto;
 }
 .more-button {
+    font-size: 16px;
     display: flex;
     justify-content: end;
     align-self: center;
@@ -166,7 +119,6 @@ img {
     font-weight: 500;
     margin-right: 10px;
 }
-
 /* パートナー募集 */
 .partner-recruitment {
     background-color: #fff;
@@ -225,6 +177,10 @@ img {
     font-size: 16px;
     line-height: 30px;
 }
+.recruitment-button {
+    width: 320px;
+    margin: 0 auto;
+}
 .contact-button {
     display: flex;
     justify-content: center;
@@ -241,7 +197,6 @@ img {
     position: relative;
     z-index: 2;
 }
-
 /* 新着情報 */
 .news {
     background-color: #FEBE0E;
@@ -270,38 +225,4 @@ img {
 }
 .news-date {
     margin-bottom: 10px;
-}
-#footer {
-    padding: 20px 0 0;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-}
-.footer-center {
-    width: 60%;
-}
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer-container img {
-    width: 100px;
-    height: auto; 
-}
-
-.footer-container ul {
-    display: flex;
-}
-.footer-container ul li {
-    margin-right: 30px;
-}
-.footer-container ul li:last-child {
-    margin-right: 0;
-}
-.copyright {
-    text-align: center;
-    margin: 40px 0 20px;
 }

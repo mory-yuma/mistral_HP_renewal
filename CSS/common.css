@@ -1,0 +1,139 @@
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    position: relative;
+}
+img {
+    width: 100%;
+}
+main {
+    margin-top: 76px;
+}
+/* ヘッダー */
+#header {
+    font-size: 14px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#header .header-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#header .header-navi-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#header .header-navi-list li {
+    margin-right: 44px;
+}
+#header ul li:last-child {
+    margin-right: 0;
+}
+#header img {
+    width: 100px;
+}
+#footer {
+    padding: 20px 0 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: #000 1px solid;
+}
+.footer-center {
+    width: 60%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container img {
+    width: 100px;
+    height: auto; 
+}
+
+.footer-container ul {
+    display: flex;
+}
+.footer-container ul li {
+    margin-right: 30px;
+}
+.footer-container ul li:last-child {
+    margin-right: 0;
+}
+.copyright {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.top-center {
+    width: 1000px;
+}
+
+/* subpage */
+.subpage-center {
+    width: 900px;
+    margin: 0 auto;
+}
+.title-container {
+    height: 340px;
+    padding: 80px 0;
+}
+.page-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.wave-top {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 200px;
+}
+.wave-top::after{
+    content: "";
+    display: block;
+    background-image: url(/img/wave-white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1;
+}
+/* モバイル用CSS */
+@media screen and (max-width: 480px) {
+    main p {
+        font-size: 16px;
+    }
+	.subpage-center {
+        padding: 20px;
+        width: 100%;
+    }
+    .wave-top {
+        padding: 0;
+    }
+}
