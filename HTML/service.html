@@ -10,21 +10,29 @@
     <title>サービスページ</title>
 </head>
 <body>
-    <header id="header">
-        <div class="header-container">
-            <h1 class="logo"><img src="/img/header_logo.png" alt="ロゴ">
-            </h1>
-            <nav class="header-navi">
-                <ul class="header-navi-list">
-                    <li><a href="/HTML/mistral_home.html">ホーム</a></li>
-                    <li><a href="/HTML/service.html">サービス</a></li>
-                    <li><a href="/HTML/overview.html">会社概要</a></li>
-                    <li><a href="/HTML/partner.html">パートナー募集</a></li>
-                    <li><a href="/HTML/contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
+    <header>
+        <h1 class="header_logo"><a href="/HTML/mistral_home.html"><img src="/img/header_logo.png" alt="ロゴ"></a></h1>
+        <nav class="pc_nav">
+          <ul class="list_nav_header">
+            <li><a href="/HTML//mistral_home.html">ホーム</a></li>
+            <li><a href="/HTML/service.html">サービス</a></li>
+            <li><a href="/HTML/overview.html">会社概要</a></li>
+            <li><a href="/HTML/partner.html">パートナー募集</a></li>
+            <li><a href="/HTML/contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="burger"></div>
+        <div class="sp_menu">
+          <nav class="sp_nav">
+            <ul class="">
+              <li><a href="/HTML/service.html">サービス<img src="/img/arrow.svg" alt=""></a></li>
+              <li><a href="/HTML/overview.html">会社概要<img src="/img/arrow.svg" alt=""></a></li>
+              <li><a href="/HTML/partner.html">パートナー募集<img src="/img/arrow.svg" alt=""></a></li>
+              <li><a href="/HTML/contact.html">お問い合わせ<img src="/img/arrow.svg" alt=""></a></li>
+            </ul>
+          </nav>
         </div>
-    </header>
+      </header>
     <main>
         <div class="title-container orange">
             <h2 class="page-title">サービス</h2>
@@ -117,7 +125,7 @@
                     <li><a href="/HTML/overview.html">会社概要</a></li>
                     <li><a href="/HTML/partner.html">パートナー募集</a></li>
                     <li><a href="/HTML/contact.html">お問い合わせ</a></li>
-                    <li><a href="/HTML/policy.html">プライバシーポリシー</a></li>
+                    <li class="policy_link"><a href="/HTML/policy.html">プライバシーポリシー</a></li>
                 </ul>
             </div>
             <p class="copyright">
@@ -125,5 +133,12 @@
             </p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      $('.burger').click(function() {
+        $(".burger").toggleClass("is-active");
+        $(".sp_menu").toggleClass("is-active");
+      })
+    </script>
 </body>
 </html>

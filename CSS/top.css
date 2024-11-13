@@ -20,7 +20,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
 }
-.main-visual-comtainer {
+.main-visual-container {
     position: relative;
     width: 34%;
     z-index: 2;
@@ -59,7 +59,7 @@
 .services::after{
     content: "";
     display: block;
-    background-image: url(/img/wave-orange.png);
+    background-image: url(/img/wave_orange.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -127,7 +127,7 @@
 .partner-recruitment::after{
     content: "";
     display: block;
-    background-image: url(/img/wave-white.png);
+    background-image: url(/img/wave.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -225,4 +225,63 @@
 }
 .news-date {
     margin-bottom: 10px;
+}
+.sp_br {
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    /* メインビジュアル */
+    .main-visual-container {
+        width: 70%;
+    }
+    .main-visual .company-name {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .main-visual .company-description {
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .sp_br {
+        display: block;
+    }
+    .main-visual {
+        margin-bottom: 0;
+    }
+    /* wave */
+    .services::after {
+        top: -30px;
+    }
+    .partner-recruitment::after {
+        top: -30px;
+    }
+    .news::after {
+        top: -30px;
+    }
+    /* サービスセクション */
+    .services-container {
+        display: block;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .service-item {
+        margin-bottom: 60px;
+    }
+    .section-title {
+        font-size: 34px;
+        margin-bottom: 36px;
+    }
+    .service-title {
+        font-size: 24px;
+    }
+    .service-description {
+        line-height: 36px;
+    }
+
+    .container {
+        padding: 140px 0 200px;
+    }
 }

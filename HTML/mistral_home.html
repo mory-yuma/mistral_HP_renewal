@@ -11,29 +11,37 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="header">
-        <div class="header-container">
-            <h1 class="logo"><img src="/img/header_logo.png" alt="ロゴ">
-            </h1>
-            <nav class="header-navi">
-                <ul class="header-navi-list">
-                    <li><a href="/HTML//mistral_home.html">ホーム</a></li>
-                    <li><a href="/HTML/service.html">サービス</a></li>
-                    <li><a href="/HTML/overview.html">会社概要</a></li>
-                    <li><a href="/HTML/partner.html">パートナー募集</a></li>
-                    <li><a href="/HTML/contact.html">お問い合わせ</a></li>
-                </ul>
+    <header>
+        <h1 class="header_logo"><a href="/HTML/mistral_home.html"><img src="/img/header_logo.png" alt="ロゴ"></a></h1>
+        <nav class="pc_nav">
+            <ul class="list_nav_header">
+            <li><a href="/HTML//mistral_home.html">ホーム</a></li>
+            <li><a href="/HTML/service.html">サービス</a></li>
+            <li><a href="/HTML/overview.html">会社概要</a></li>
+            <li><a href="/HTML/partner.html">パートナー募集</a></li>
+            <li><a href="/HTML/contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="burger"></div>
+        <div class="sp_menu">
+            <nav class="sp_nav">
+            <ul class="">
+                <li><a href="/HTML/service.html">サービス<img src="/img/arrow.svg" alt=""></a></li>
+                <li><a href="/HTML/overview.html">会社概要<img src="/img/arrow.svg" alt=""></a></li>
+                <li><a href="/HTML/partner.html">パートナー募集<img src="/img/arrow.svg" alt=""></a></li>
+                <li><a href="/HTML/contact.html">お問い合わせ<img src="/img/arrow.svg" alt=""></a></li>
+            </ul>
             </nav>
         </div>
     </header>
     <main>
         <section class="main-visual">
-            <div class="main-visual-comtainer">
+            <div class="main-visual-container">
                 <img src="/img/logo.png" alt="">
                 <div class="company">
                     <p class="company-name">ミストラルとは</p>
                     <p class="company-description">ミストラルとは、ヨーロッパ用語で春を告げる風と言われております。<br>
-                        新しい季節に吹く風『新風』のように、日々変化が激しい時代でも
+                        新しい季節に吹く風『新風』のように、<br class="sp_br">日々変化が激しい時代でも
                         挑戦していく『企業』、そして成長する『人材』を生み出すことを
                         理念としております。</p>
                 </div>
@@ -100,7 +108,7 @@
                     <li><a href="/HTML/overview.html">会社概要</a></li>
                     <li><a href="/HTML/partner.html">パートナー募集</a></li>
                     <li><a href="/HTML/contact.html">お問い合わせ</a></li>
-                    <li><a href="/HTML/policy.html">プライバシーポリシー</a></li>
+                    <li class="policy_link"><a href="/HTML/policy.html">プライバシーポリシー</a></li>
                 </ul>
             </div>
             <p class="copyright">
@@ -108,5 +116,12 @@
             </p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      $('.burger').click(function() {
+        $(".burger").toggleClass("is-active");
+        $(".sp_menu").toggleClass("is-active");
+      })
+    </script>
 </body>
 </html>
